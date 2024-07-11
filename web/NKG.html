@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alabora</title>
+    <link rel="stylesheet" href="alabora.css">
+    <style>
+        .wrong {
+            color: red;
+        }
+        #results {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #333;
+        }
+    </style>
+</head>
+<body background="(7).jpeg">
+<header>
+    <div class="header-content">
+        <h1>Alabora</h1>
+    </div>
+</header>
+<nav>
+    <ul>
+        <li><a href="alabora.html">Anasayfa</a></li>
+        <li><a href="analiz.html">E-posta Analizi</a></li>
+        <li><a href="NKG.html">Ne Kadar Güvendeyim?</a></li>
+        <li><a href="blog.html">Blog</a></li>
+    </ul>
+</nav>
+<form name="quizForm" action="islem.php" method="POST">
+    <div class="container2">
+        <div id="q1" class="sorular">
+            <h3>Soru 1</h3>
+            <p><a href="blog.html">Phishing'in</a> ne olduğunu biliyor musunuz?</p>
+            <input type="radio" name="q1" value="correct"> A-) Evet<br>
+            <input type="radio" name="q1" value="wrong"> B-) Hayır<br>
+        </div>
+        <div id="q2" class="sorular">
+            <h3>Soru 2</h3>
+            <p>Aşağıdakilerden hangisi <a href="blog.html">Phishing'in</a> amacıdır?</p>
+            <input type="radio" name="q2" value="wrong"> A-) Balık tutmak<br>
+            <input type="radio" name="q2" value="wrong"> B-) Evrakta sahtecilik<br>
+            <input type="radio" name="q2" value="wrong"> C-) Bankacılık yöntemi<br>
+            <input type="radio" name="q2" value="correct"> D-) Kişileri dolandırmak<br>
+        </div>
+        <div id="q3" class="sorular">
+            <h3>Soru 3</h3>
+            <p>E-postanızı herkesle paylaşır mısınız?</p>
+            <input type="radio" name="q3" value="correct"> A-) Evet<br>
+            <input type="radio" name="q3" value="wrong"> B-) Hayır<br>
+        </div>
+        <div id="q4" class="sorular">
+            <h3>Soru 4</h3>
+            <p><a href="blog.html">SPF, DKIM, DMARC</a> hakkında bilginiz var mı?</p>
+            <input type="radio" name="q4" value="correct"> A-) Evet<br>
+            <input type="radio" name="q4" value="wrong"> B-) Hayır<br>
+        </div>
+        <div id="q5" class="sorular">
+            <h3>Soru 5</h3>
+            <p>Aldığınız e-postalardaki linklere ya da varsa dosyalara anında tıklayıp içine bakar mısınız?</p>
+            <input type="radio" name="q5" value="correct"> A-) Evet<br>
+            <input type="radio" name="q5" value="wrong"> B-) Hayır<br>
+        </div>
+        <div id="q6" class="sorular">
+            <h3>Soru 6</h3>
+            <p>Hesaplarınızda olağandışı etkinlik olup olmadığını <a href="blog.html">kontrol eder</a> misiniz?</p>
+            <input type="radio" name="q6" value="correct"> A-) Evet<br>
+            <input type="radio" name="q6" value="wrong"> B-) Hayır<br>
+        </div>
+        <div id="q7" class="sorular">
+            <h3>Soru 7</h3>
+            <p>Tıkladığınız linklerde sizden istenen kişisel bilgilerinizi (T.C.K. vb.) ya da banka kredi kartı bilgilerinizi girer misiniz?</p>
+            <input type="radio" name="q7" value="correct"> A-) Evet<br>
+            <input type="radio" name="q7" value="wrong"> B-) Hayır <br>
+        </div>
+        <div id="q8" class="sorular">
+            <h3>Soru 8</h3>
+            <p>Bir internet dolandırıcılığı başınıza geldi mi?</p>
+            <input type="radio" name="q8" value="correct"> A-) Evet<br>
+            <input type="radio" name="q8" value="correct"> B-) Hayır<br>
+        </div>
+        <div id="q9" class="sorular">
+            <h3>Soru 9</h3>
+            <p>Bir dolandırıcılıkla karşı karşıya kaldığınızda neler yapabileceğinizi biliyor musunuz?</p>
+            <input type="radio" name="q9" value="correct"> A-) Evet<br>
+            <input type="radio" name="q9" value="wrong"> B-) Hayır<br>
+        </div>
+        <div id="q10" class="sorular">
+            <h3>Soru 10</h3>
+            <p>Gittiğiniz sitelerin URL'lerini kontrol eder misiniz?</p>
+            <input type="radio" name="q10" value="correct"> A-) Evet<br>
+            <input type="radio" name="q10" value="wrong"> B-) Hayır<br>
+        </div>
+        <div id="q11" class="sorular">
+            <h3>Soru 11</h3>
+            <p>Bir URL'in güvenli olup olmadığını nasıl anlayacağınızı biliyor musunuz?</p>
+            <input type="radio" name="q11" value="correct"> A-) Evet<br>
+            <input type="radio" name="q11" value="wrong"> B-) Hayır<br>
+        </div>
+        <button class="animated-button"> Anketi Gönder</button>
+    </div>
+</form>
+<div id="results"></div>
+<footer>
+    <p>&copy; 2024 Alabora. Tüm hakları saklıdır.</p>
+</footer>
+</body>
+</html>

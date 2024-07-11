@@ -1,0 +1,205 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #57a49e;
+    min-height: 100vh;/* Sayfanın minimum yüksekliğini tarayıcı yüksekliği kadar yap */
+
+    display: flex;
+    flex-direction: column;
+  }
+
+header {
+    color: #F2F2F2;
+    padding: 10px 20px;
+    text-align: left;
+  }
+
+
+.header-content {
+    display: flex;
+    align-items: center;
+  }
+
+h2{
+    color: #28403D;
+  }
+
+nav {
+    display: flex; /*listeleri sayfanın en sağından başlatır */
+    justify-content: flex-end; /*listeleri sayfanın en sağından başlatır */
+    background-color: #28403D;
+    color   :#F2F2F2;
+    padding: 10px; /*Kalınlığı ayarlıyor*/
+  }
+p {
+    line-height: 30px; /*satırlar arası boşlukları ayarlarız*/
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+  }
+
+/*alt alta listeli yazdığımız elemanları yan yana listeler*/
+nav ul li {
+    display: inline;
+    color:#F2F2F2;
+  }
+  
+nav ul li a {
+    color: #F2F2F2;
+    text-decoration: none;
+    padding: 10px 20px; /*aradaki boşluğu ayarlıyor*/
+    margin: 0 20px; /*aradaki boşluğu ayarlıyor*/
+  }
+
+/*listeli bir şekilde yazdığımız elemanların üstüne geldiğimizde renk değiiştirir*/
+nav ul li a:hover {
+    background-color: #7386BF;
+  }
+
+
+/* Başlık ve Alt Başlık Stilleri */
+.sutun h1 {
+  margin: 0; /* Başlıkların üst ve alt boşluğunu kaldırmak için */
+  padding: 0; /* Başlıkların iç dolgusunu kaldırmak için */
+  font-size: 2em; /* Başlık font büyüklüğünü ayarlamak için */
+}
+
+.sutun h2 {
+  margin: 5px 0 0 0; /* Alt başlıkların üst boşluğunu ayarlamak için */
+  font-size: 1.5em; /* Alt başlık font büyüklüğünü ayarlamak için */
+}
+
+
+
+
+/* analiz, phishin kısmındaki divler için ortak özellikler*/
+.analiz-content {
+  width: 400px;
+  height: 750px;
+  padding: 20px;
+  margin: 30px;
+  background-color: #F2F2F2;
+  border-radius: 10px; /* Köşelere ovallik katıyor */
+  float: left;
+}
+
+
+
+/* NGK test soruları için Div Ortak Özellikler */
+.sorular{
+  background-color: #f0f0f0;
+  color: #28403D;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex; /* Flexbox kullanımı */
+  flex-direction: column; /* Yazıları dikeyde hizalamak için */
+  justify-content: center; /* İçeriği dikeyde ortala */
+  align-items: center; /* İçeriği yatayda ortala */
+}
+
+/*NKG test soruları VE Blog için düzenleme*/
+.container2{
+  display: flex; /* Flexbox düzeni */
+  flex-wrap: wrap; /* İçerik sığmazsa satırı kır */
+  justify-content: center; /* İçeriği yatayda ortala */
+}
+.common-content {
+    width: 400px;
+    height: 465px;
+    padding: 20px;
+    margin: 30px;
+    background-color: #F2F2F2;
+    border-radius: 10px; /* Köşelere ovallik katıyor */
+    float: left;
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px; /* Görüntü konteynerinin yüksekliği */
+    border: 1px solid #ccc; /* İsteğe bağlı, görsel için bir kenarlık */
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.animated-button {
+    background-color: #e7e7e7; /* Açık gri arkaplan rengi */
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Animasyon efektleri */
+}
+
+.animated-button:hover {
+    background-color: #c07f37; /* Hover etkisi pembe */
+    transform: scale(1.1); /* Hover etkisinde büyüme efekti */
+}
+
+
+
+/* Blog bölümündeki stünların Ortak Özellikleri */
+.sutun {
+  background-color: #f0f0f0;
+  color: #28403D;
+  width: 600px;
+  height: 800px;
+  margin: 30px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex; /* Flexbox kullanımı */
+  flex-direction: column; /* İçeriği dikeyde hizalamak için */
+  justify-content: center; /* Yatay ortalama */
+  align-items: center; /* Dikey ortalama */
+}
+
+/*blog kısmındaki divlerin ortak özellikleri*/
+.container {
+    display: flex;
+    justify-content: center;  /*Yatayda ortalamak için*/
+    gap: 10px;  /*Sütunlar arasındaki boşluk*/
+    align-items: center;  /*Dikeyde ortalamak için*/
+    min-height: 100vh; /*Sayfanın tamamında ortalamak için */
+}
+
+
+
+
+  aside{
+    padding: 20px;
+    margin: 20px;
+    background-color: #F2F2F2;
+    border-radius: 10px; /*köşelere ovallik katıyor*/
+  }
+
+
+  footer {
+      background-color: #28403D;
+      color: #F2F2F2;
+      padding: 10px 20px;
+      text-align: center;
+      position: relative; /* Sabit konumdan çıkarıldı */
+      bottom: 0;
+      width: 100%;
+  }
